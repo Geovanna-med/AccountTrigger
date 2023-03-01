@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Importance_Level_by_Color__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Importance_Level__c =  $CustomMetadata.opportunities_importance__mdt.Orange.MasterLabel  , IMAGE(&quot;https://fun-force-4784-dev-ed--c.scratch.vf.force.com/resource/1677616502000/OrangeColor?&quot;, &quot;orange&quot; ,35, 35),  
+
+IF(Importance_Level__c =   $CustomMetadata.opportunities_importance__mdt.Red.MasterLabel  ,  IMAGE(&quot;https://fun-force-4784-dev-ed--c.scratch.vf.force.com/resource/1677616624000/RedColor&quot;, &quot;Red&quot;,35, 35),  
+
+IF(Importance_Level__c =   $CustomMetadata.opportunities_importance__mdt.Yellow.MasterLabel  ,  IMAGE(&quot;https://fun-force-4784-dev-ed--c.scratch.vf.force.com/resource/1677616560000/YellowColor?&quot;, &quot;Yellow&quot;,35, 35),  
+
+IF(Importance_Level__c =   $CustomMetadata.opportunities_importance__mdt.Green.MasterLabel  ,  IMAGE(&quot;https://fun-force-4784-dev-ed--c.scratch.vf.force.com/resource/1677616606000/GreenColor?&quot;, &quot;Green&quot;,35, 35), &apos;&apos;) ) ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Importance Level by Color</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
