@@ -8,6 +8,10 @@
     },
     "mobileSettings": {
       "enableS1EncryptedStoragePref2": false
+    },
+    "workDotComSettings": {
+      "enableWorkThanksPref": true,
+      "enableProfileSkills": true
     }
   }
 }
